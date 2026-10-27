@@ -79,4 +79,4 @@ python -m pytest --cov=app --cov-report=term-missing
  
 A GitHub Actions workflow in `.github/workflows/python-app.yml` runs on every
 push or pull request to the `main` branch. It installs the packages, runs the
-tests with pytest, and fails if test coverage is below 90%.
+tests with pytest, and fails if test coverage is below 90%
