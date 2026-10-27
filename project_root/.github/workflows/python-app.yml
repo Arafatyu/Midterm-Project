@@ -11,6 +11,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project_root
 
     steps:
       - name: Check out the code
@@ -28,4 +31,4 @@ jobs:
 
       - name: Run tests and enforce 90% coverage
         run: |
-          pytest --cov=app --cov-fail-under=90
+          python -m pytest --cov=app --cov-fail-under=90
